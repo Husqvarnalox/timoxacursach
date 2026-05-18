@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корочки.есть — регистрация</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main>
+        <div class="card center-card">
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <label for="login">Логин (латиница и цифры, от 6 символов)</label>
+                <input type="text" id="login" name="login" required>
+
+                <label for="password">Пароль (от 8 символов)</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="full_name">ФИО (только кириллица)</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="phone">Телефон (8(XXX)XXX-XX-XX)</label>
+                <input type="text" id="phone" name="phone" placeholder="8(900)123-45-67" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Создать пользователя</button>
+            </form>
+            <div id="msg" class="msg"></div>
+            <div class="link-row">
+                <a href="/">Уже есть аккаунт? Войти</a>
+            </div>
+        </div>
+    </main>
+    <script src="/js/common.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

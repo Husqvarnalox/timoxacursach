@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корочки.есть — новая заявка</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Корочки.есть</h1>
+        <nav>
+            <span id="user-name"></span>
+            <a href="/applications.html">Мои заявки</a>
+            <a href="#" id="logout">Выйти</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card" style="max-width:560px;margin:0 auto">
+            <h2>Новая заявка на обучение</h2>
+            <form id="new-app-form">
+                <label for="course_name">Наименование курса</label>
+                <input type="text" id="course_name" name="course_name" required>
+
+                <label for="start_date">Желаемая дата начала обучения</label>
+                <input type="date" id="start_date" name="start_date" required>
+
+                <label for="payment_method">Способ оплаты</label>
+                <select id="payment_method" name="payment_method" required>
+                    <option value="">— выберите —</option>
+                    <option value="cash">Наличными</option>
+                    <option value="phone_transfer">Перевод по номеру телефона</option>
+                </select>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="msg" class="msg"></div>
+        </div>
+    </main>
+    <script src="/js/common.js"></script>
+    <script src="/js/new-application.js"></script>
+</body>
+</html>

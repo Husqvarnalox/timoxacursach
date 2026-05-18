@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корочки.есть — мои заявки</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Корочки.есть</h1>
+        <nav>
+            <span id="user-name"></span>
+            <a href="/new-application.html">Подать заявку</a>
+            <a href="#" id="logout">Выйти</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <div class="toolbar">
+                <h2>Мои заявки</h2>
+                <a href="/new-application.html"><button>Новая заявка</button></a>
+            </div>
+            <div id="empty" class="muted" style="display:none">У вас пока нет заявок.</div>
+            <table id="apps-table" style="display:none">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Курс</th>
+                        <th>Дата начала</th>
+                        <th>Оплата</th>
+                        <th>Статус</th>
+                        <th>Отзыв</th>
+                    </tr>
+                </thead>
+                <tbody id="apps-body"></tbody>
+            </table>
+            <div id="msg" class="msg"></div>
+        </div>
+    </main>
+    <script src="/js/common.js"></script>
+    <script src="/js/applications.js"></script>
+</body>
+</html>
