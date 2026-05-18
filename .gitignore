@@ -2,3 +2,7 @@ node_modules/
 npm-debug.log*
 .env
 .DS_Store
+korochki.db
+korochki.db-journal
+korochki.db-wal
+korochki.db-shm
